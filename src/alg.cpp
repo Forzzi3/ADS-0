@@ -4,7 +4,7 @@ int gcd(int a, int b) {
     if (a == 0 || b == 0)
 		return a + b;
 	if (a > b)
-		return nod(a - b, b);
+		return gcd(a - b, b);
 	else
-		return nod(a, b - a);
+		return gcd(a, b - a);
 }
